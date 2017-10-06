@@ -69,6 +69,7 @@ RSpec.feature 'SequencingRuns', type: :feature do
 
     click_button 'Create Sequencing run'
     expect(page.text).to match('error prohibited this record from being saved')
+    expect(find('.errors')).to have_content('Flowcell ID has not been completed')
   end
 
   scenario 'successful update' do

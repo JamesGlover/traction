@@ -36,3 +36,20 @@ en:
     success: "Barcodes were successfully printed"
     failure: "Unable to print barcodes"
     unavailable: "Printer is unavailable"
+
+  activerecord:
+    attributes:
+      sequencing_run/flowcells:
+        flowcell_id: Flowcell ID
+      flowcell:
+        flowcell_id: Flowcell ID
+    errors:
+      models:
+        flowcell:
+          attributes:
+            flowcell_id:
+              blank: has not been completed
+  activemodel:
+    attributes:
+      sequencing_run/flowcells:
+        flowcell_id: Flowcell ID
